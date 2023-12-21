@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="add" style="background-color: rgb(148, 148, 156); margin: 0 5%; height: 300px; text-align: center;">
+    <h1 style="text-align: center; color: white;">form</h1>
+    <div class="inputdiv" style="padding: 2%;">
+        <input type="text" style="font-size: 22px;" id="input" placeholder="enter the number"><br>
+                
+    <div>
+        <button type="submit" style="padding: 2%; font-size: 22px;" onclick="convert()">convert the addition</button>
+    </div>
+    <div id="result">
+
+    </div>
+    </div>
+    <div id="normal">
+
+    </div>
+    <div id="normal1">
+
+    </div>
+    <div id="normal2">
+
+    </div>
+
+    <script>
+        function convert(){
+            let cmVal = Number(document.getElementById("input").value)
+        let inchVal = cmVal/2.54
+        let result = document.getElementById("result")
+        result.innerHTML = inchVal.toFixed(3) + "inches"
+        }
+//
+// var
+var a=20
+var b=20
+console.log(a+b) 
+
+// let
+{
+let a=10
+let b=20
+console.log(a+b)
+}
+
+// const
+const weekdays= 7
+console.log(weekdays+"day per week")
+
+var price=1000
+var product="praveen"
+var tax=20
+document.getElementById("normal").innerHTML=product
+document.getElementById("normal1").innerHTML=(price + tax)
+// console.log(product)
+// console.log(price+tax)
+
+var fruit="jackfruit"
+var count=50
+var price=200
+var total=count*price
+console.log(fruit)
+console.log(total)
+
+
+
+    </script>
+    
+</body>
+</html>
